@@ -1,6 +1,7 @@
 #pragma once
 #include <queue>
 #include <stdexcept>
+#include <vcruntime.h>
 
 template <typename Floating> class SimpleMoveAverage {
 public:
@@ -15,6 +16,8 @@ public:
             fifo_.pop();
         }
     }
+
+    size_t getK() { return k_; }
 
     bool hasCurrent() { return hasSma_; }
 
