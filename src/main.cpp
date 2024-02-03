@@ -1,4 +1,4 @@
-#include "move_average_interface.hpp"
+#include "move_average.hpp"
 #include <iomanip>
 #include <iostream>
 #include <ratio>
